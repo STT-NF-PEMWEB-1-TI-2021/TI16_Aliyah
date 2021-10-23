@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Cart</title>
+	<style>
+		 .col-6 {
+            width: 50%;
+            float: left;
+            padding: 40px;
+        }
+        
+		table {
+            width: 100%;
+        }
+
+        table thead th {
+            border-top: 2px solid #999;
+            border-bottom: 2px solid #999;
+        }
+
+        table tfoot td {
+            border-top: 2px solid #999;
+            border-bottom: 2px solid #999;
+        }
+        .card {
+            padding: 10px;
+            background-color: lightgrey;
+            box-shadow: 5px 7px #b9b6b6;
+        }
+		.text-card .text-left {
+            float: left
+        }
+
+        .text-card .text-right {
+            float: right;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 3px;
+            background-color: lightgrey;
+            font-size: 18px;
+        }
+	</style>
+</head>
+<body style="min-height: 100vh;">
+    <nav style="background-color: grey;">
+        <h1 style="padding: 10px; float: left;">
+            <a style="font-size: 20px;"> &nbsp;Site Name </a>
+        </h1>
+        <ul style="list-style: none; margin: 0; padding: 22px; overflow: hidden;">
+            <li style="display: 1px solid; float: left; padding: 15px;">
+                <a style="font-size: 15px;" href="#"> Category 1 </a>
+            </li>
+            <li style="display: 1px solid; float: left; padding: 15px;">
+                <a style="font-size: 15px;" href="#"> Category 2 </a>
+            </li>
+            <li style="float: left; padding: 15px;">
+                <a style="font-size: 15px;" href="#"> Category 3 </a>
+            </li>
+            <li style="float: right; padding: 15px; margin-left: -5px;">
+                <a style="font-size: 15px;" href="#"> Cart (1) </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="col-6">
+        <article>
+            <header>
+                <h1>You Cart</h1>
+            </header>
+            <table>
+                <thead>
+                    <th>
+                        Item
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="60%">Shirt size small</td>
+                        <td style="text-align: center;">
+                            Rp. 20.000
+                        </td>
+                        <td class="select" style="text-align: center;">
+                            <select name="qty" id="qty" class="opt">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Subtotal : Rp. 20.000
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </section>
+    
+    <section class="col-6">
+        <article class="card">
+            <header>
+                <h3>Summary (1 Item)</h3>
+            </header>
+            <div class="text-card">
+                <p class="text-left">
+                    Subtotal
+                </p>
+                <p class="text-right">
+                    Rp. 20.000
+                </p>
+
+            <div class="text-card">
+                <p class="text-left">Shipping</p>
+                <p class="text-right"></p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Est. Taxes
+                </p>
+                <p class="text-right">
+                    -
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <hr>
+
+            <div class="text-card">
+                <p class="text-left">
+                    Total
+                </p>
+                <p class="text-right">
+                    Rp. 20.000
+                </p>
+
+                <div style="clear: both;"></div>
+            </div>
+            <a href="checkout.html"><button class="btn-checkout" link="checkoout.html">Checkout</button></a>
+        </article>
+    </section>
+    
+    <footer>
+        <div style="float:left;">
+            <h5 style="float: left;">
+                <a>Site Name</a>
+            </h5>
+            <ul style="list-style: none; margin: 0; padding: 10px; overflow: hidden;">
+                <li style="display: 1px solid; float: left; padding: 10px;">
+                    <a href="#"> Category X </a>
+                </li>
+                <li style="display: 1px solid; float: left; padding: 10px;">
+                    <a href="#"> Category Y </a>
+                </li>
+                <li style="float: left; padding: 10px;">
+                    <a href="#"> Category Z </a>
+                </li>
+            </ul>
+            
+        </div>
+        <div style="float:right;">
+            <h4>
+                Stay in Touch! Join our Newsletter.
+            </h4>
+
+            <input type="text" name="email" id="email" placeholder="Enter Email" class="input-email">
+            <button class="btn">Subscribe</button>
+        </div>
+
+    </footer>
+    <!-- end of footer -->
+</body>
+
+</html>
